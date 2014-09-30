@@ -130,7 +130,7 @@ public class LockActionsBean implements LockActions {
         return canLock;
     }
 
-    protected boolean isManagerOnDocument(DocumentRef ref) {
+    protected boolean isManagerOnDocument(DocumentRef ref) throws ClientException {
         return documentManager.hasPermission(ref, EVERYTHING);
     }
 
